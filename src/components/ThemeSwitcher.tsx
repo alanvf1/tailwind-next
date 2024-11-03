@@ -23,14 +23,14 @@ export function ThemeSwitcher() {
         <Sun className="h-5 w-5" />
       </label>
       <Switch.Root
-        className="relative h-[25px] w-[42px] rounded-full bg-zinc-200 px-[2px] shadow-lg focus:shadow-sm data-[state=checked]:bg-zinc-600"
+        className="relative h-[25px] w-[42px] rounded-full bg-zinc-200 px-[2px] shadow-lg focus:shadow-sm dark:bg-zinc-600"
         id="theme-switch"
         defaultChecked={theme === 'dark'}
         onCheckedChange={() => {
           theme === 'light' ? setTheme('dark') : setTheme('light')
         }}
       >
-        <Switch.Thumb className="left-[2px] block h-[21px] w-[21px] rounded-full bg-zinc-700 shadow-sm transition-transform duration-100 data-[state=checked]:translate-x-[17px] data-[state=checked]:bg-violet-300" />
+        <Switch.Thumb className="left-[2px] block h-[21px] w-[21px] rounded-full bg-zinc-700 shadow-sm transition-transform duration-100 dark:translate-x-[17px] dark:bg-violet-300" />
       </Switch.Root>
       <label className="pr-4" htmlFor="theme-switch">
         <Moon className="h-5 w-5" />
